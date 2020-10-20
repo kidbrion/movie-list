@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movie List</title>
+</head>
+<body>
+    <header>Movie List</header>
+
+    <div class="dark">
+        <form class="list-input" class="movie-filter">
+            <label for="movie">Enter New Movie: </label>
+            <input type="text" name="movie" id="movie-input">
+            <button type="submit" id="movie-btn"><i class="fas fa-plus"></i></button>
+        </form>
+        <div class="select">
+            
+            <select name="movieFilter" id="" class="movie-filter">
+                <option value="" aria-disabled="true">filter movies</option>
+                <option value="all">all</option>
+                <option value="watched">watched</option>
+                <option value="notWatched">not watched</option>
+            </select>
+        </div>
+
+
+        <div class="display">
+            <ul class="movie-display"></ul>
+        </div>
+    </div>
+
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
+

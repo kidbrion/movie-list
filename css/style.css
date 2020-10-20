@@ -1,0 +1,135 @@
+
+body{
+    
+    background-image: url(../img/rm-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    color: white;
+    font-size: 40px;
+    font-weight: 650;
+    letter-spacing: 5px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    position: fixed;
+    top: 100px; 
+}
+
+form button, form input{
+    border: none;
+    height: 25px;
+    border-radius: 1px;
+    
+}
+
+form button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+select {
+    position: fixed;
+    top: 160px;
+    width: 330px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    
+}
+select option {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.movie-display{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.movie-display{
+    display: flex;
+    align-items: center;
+    align-content: center;
+   
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 5px;
+    width: 320px;
+    
+}
+.movie-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    list-style: none;
+    background-color: aliceblue;
+    margin-top: 3px;
+    border-radius: 2px;
+    width: 100%;
+
+}
+.fa-trash, .fa-clipboard-check, .fa-plus {
+    pointer-events: none;
+}
+
+
+.movie-item li {
+    flex: 1;
+    padding: 1px;
+}
+
+.del-btn, .done-btn {
+    border:none;
+    color: white;
+    background-color: black;
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+.fall {
+    transform: translateY(10px) rotateZ(15deg);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+   
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
